@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+     <meta name="description" content="Portland historical city walking tours guiding sightseeing tourists">
+    <meta name="keywords" content="walking, tours, history, oregon, guides, explore, city, tourist">
+    <title>Downtown Tour | Portland Historical Tours</title>
+     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/grid.css"> 
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var trackingID = "UA-55723504-3"; // replace with your Google Analytics Tracking ID from http://analytics.google.com/
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', trackingID, 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body>
+ <header>
+   <nav class="container-fluid navbar navbar-default">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="images/portland-historical-tours.png" alt="Walking city guide in Portland"></a>
+    </div><!-- /.navbar-header -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">HOME<span class="sr-only">(current)</span></a></li>
+        <li class="active dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TOURS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="#">Downtown Tour</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="growth.html">Growth Tour</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="landmarks.html">Landmarks Tour</a></li>
+          </ul>
+        </li>
+          <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+ </nav>
+</header>
+    
+<div class="dt-bg">
+</div>
+    
+<main> 
+    <section id="opening">
+        <h1 class="centerit">Downtown Tour</h1>
+        <p>Enjoy a walking tour of Portland's days gone by. This walking only tour provides a glimpse into the natural, architectural, and cultural history of downtown Portland. Upon arrival, you will receive a booklet of the 20 locations we will visit throughout this three hour tour. Use this booklet to compare Portland's current landscape with accurate historical context.</p> 
+    </section><!-- /#opening -->
+        
+    <section id="upper" class="section group">
+        <div class="container-fluid">
+        <div class="col-sm-4 col-md-3">
+         <h2>Details</h2>
+              <ul>
+                <li>Duration&#58; 2 Hours</li>
+                <li>Transportation&#58; Walking</li>
+                <li>Food&#58; None</li>
+                <li>Price&#58; &#36;50</li>
+             </ul>
+        </div>
+        <div class="col-sm-7 col-sm-offset-1 col-md-4 col-md-offset-0">
+            <h2>Included</h2>
+            <ul class="included">
+              <li>Complimentary tour booklet with before and after photos and a brief history of each location</li>
+              <li>Complimentary water</li>
+           </ul>
+        </div>
+        <div class="col-sm-12 col-md-5">
+            <h2>Review</h2>
+            <p class="review">&quot;It was amazing to walk around downtown Portland comparing the images in the booklet to the current building or in some cases disappearance of a building.&quot;<br>&dash;Emily</p>
+        </div>
+        </div><!-- /container-fluid -->
+    </section><!-- /#upper -->
+        
+    <section id="reservation" class="section group">
+      <div id="lower" class="container-fluid">
+       <div class="res-form col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
+            <h2>Reserve Your Tour Now!</h2>
+            <p>Tours take place every day starting 1:00 p.m.</p>
+           
+    <form id="reservation" name="reservation" method="post" action="php/process-reservation.php"> 
+ <div class="form-inline">
+    <label class="mr-sm-2" for="tour">Choose Your Tour</label>&nbsp;
+    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="tour" name="tour">
+    <option selected>Choose...</option>
+    <option value="1">Downtown Tour</option>
+    <option value="2">Growth Tour</option>
+    <option value="3">Landmarks Tour</option>
+  </select>
+</div>
+<div class="form-group row">
+  <label for="date" class="col-2 col-form-label">Date of Tour</label>
+  <div class="col-10">
+    <input class="form-control" type="date" id="date" name="date">
+  </div>
+ </div>    
+<div class="form-group row justify-content-center">
+  <label for="name" class="col-2">Name</label>
+  <div class="col-10">
+    <input class="form-control" type="text" id="name" name="name">
+  </div>
+</div>               
+<div class="form-group row">
+  <label for="email" class="col-2 col-form-label">Email</label>
+  <div class="col-10">
+    <input class="form-control" type="email" id="email" name="email">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="phone" class="col-2 col-form-label">Phone Number</label>
+  <div class="col-10">
+    <input class="form-control" type="tel" id="phone" name="phone">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="groupnumber" class="col-2 col-form-label">Number of People in Group</label>
+  <div class="col-10">
+    <input class="form-control" type="number" id="groupnumber" name="groupnumber">
+  </div>
+</div>
+<div class="form-group row">
+  <label for="allergy" class="col-2 col-form-label">Does anyone in your party have food or drink sensitivities? If so, what are they?</label>
+  <div class="col-10">
+    <input class="form-control" type="text" id="allergy" name="allergy">
+  </div>
+</div>  
+<button id="button" type="submit" class="btn btn-primary">Submit</button>       
+</form><!-- /form -->
+</div><!-- /col1 --> 
+ <div class="tips col-sm-11 col-sm-offset-1 col-md-5 col-md-offset-1">
+    <h3>Tips for a Great Tour</h3>
+    <ul>
+        <li>Make reservations early</li>
+        <li>Wear comfortable walking shoes</li>
+        <li>Wear comfortable clothes that are suitable for walking</li>
+        <li>Dress prepared for changes in weather including an all-weather jacket </li>
+        <li>Bring sunscreen to protect your skin </li>
+        <li>Bring sunglasses to protect your eyes from UV exposure</li>
+        <li>Bring a camera with extra batteries</li>
+        <li>Notify your guide before the tour of any special needs that you may have for anyone in your group</li>
+        <li>Arrive 15 minutes before the start of the tour</li>
+     </ul>
+ </div><!-- /col2 -->
+</div><!-- /container-fluid -->
+</section><!-- /lower -->
+</main>
+    
+ <footer>
+  <p class="centerit">Portland Historical Walking Tours &copy; 2017 &middot; Designed by Ashley Clifton</p> 
+ </footer>
+
+</body>
+</html>
